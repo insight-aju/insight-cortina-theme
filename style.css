@@ -1,69 +1,39 @@
-/*
-  Insight Cortina Theme Light
-  Repositório sugerido: insight-aju/insight-cortina-theme
-  Arquivos esperados na raiz do repo:
-  - style.css
-  - background.svg
-
-  Use no firmware:
-  const char* THEME_CSS_URL = "https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/style.css";
-*/
-
+/* Insight Cortina Theme - versão light para ESP32 */
 :root {
-  font-family: Arial, sans-serif;
-  background: #eef2f7;
-  color: #172033;
+  --bg: #0b1220;
+  --card: rgba(17, 24, 39, 0.88);
+  --border: rgba(148, 163, 184, 0.28);
+  --text: #f8fafc;
+  --muted: #cbd5e1;
 }
 
 body {
-  background:
-    linear-gradient(180deg, rgba(238,242,247,0.92), rgba(220,227,237,0.96)),
-    url("background.svg") center/cover fixed no-repeat;
-  color: #172033;
+  background-color: var(--bg);
+  background-image: linear-gradient(180deg, rgba(15,23,42,.75), rgba(15,23,42,.95)), url('https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/background.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text);
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(148, 163, 184, 0.55);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+  background: var(--card) !important;
+  border-color: var(--border) !important;
+  backdrop-filter: blur(5px);
 }
 
-h1, h2 {
-  color: #0f172a;
+h1 {
+  letter-spacing: .3px;
 }
 
-.muted {
-  color: #64748b;
+.btn, button {
+  box-shadow: 0 8px 18px rgba(0,0,0,.22);
 }
 
-button, .btn {
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
-}
+.up { background: linear-gradient(135deg, #15803d, #16a34a) !important; }
+.stop { background: linear-gradient(135deg, #991b1b, #dc2626) !important; }
+.down { background: linear-gradient(135deg, #1d4ed8, #2563eb) !important; }
 
-.up {
-  background: #15803d;
-}
+.muted { color: var(--muted) !important; }
 
-.stop {
-  background: #b91c1c;
-}
-
-.down {
-  background: #2563eb;
-}
-
-.warn {
-  background: #b45309;
-}
-
-.notice {
-  background: #dcfce7;
-  color: #14532d;
-  border: 1px solid #86efac;
-}
-
-input[type=time], input[type=number], .mono {
-  background: #f8fafc;
-  color: #0f172a;
-  border-color: #cbd5e1;
-}
+/* v5: caminho absoluto para o background e compatível com carregamento assíncrono do ESP32 */
