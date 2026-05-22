@@ -1,69 +1,97 @@
-/*
-  Insight Cortina Theme Light
-  Repositório sugerido: insight-aju/insight-cortina-theme
-  Arquivos esperados na raiz do repo:
-  - style.css
-  - background.svg
-
-  Use no firmware:
-  const char* THEME_CSS_URL = "https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/style.css";
+/* Insight Cortina Theme LIGHT - v7
+   Coloque este arquivo na raiz do repo: insight-aju/insight-cortina-theme/style.css
 */
 
-:root {
-  font-family: Arial, sans-serif;
-  background: #eef2f7;
-  color: #172033;
+:root,
+html {
+  font-family: Arial, sans-serif !important;
+  background: #f3f6fb !important;
+  color: #0f172a !important;
 }
 
 body {
-  background:
-    linear-gradient(180deg, rgba(238,242,247,0.92), rgba(220,227,237,0.96)),
-    url("background.svg") center/cover fixed no-repeat;
-  color: #172033;
+  background-color: #f3f6fb !important;
+  background-image:
+    linear-gradient(180deg, rgba(255,255,255,.92), rgba(241,245,249,.96)),
+    url('https://cdn.jsdelivr.net/gh/insight-aju/insight-cortina-theme@main/background.svg');
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  color: #0f172a !important;
+}
+
+h1, h2, h3,
+p, label, b,
+span, div {
+  color: inherit;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(148, 163, 184, 0.55);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+  background: rgba(255,255,255,.88) !important;
+  border: 1px solid rgba(148,163,184,.55) !important;
+  box-shadow: 0 10px 28px rgba(15,23,42,.10) !important;
+  backdrop-filter: blur(8px);
 }
 
-h1, h2 {
-  color: #0f172a;
+.muted,
+.small {
+  color: #475569 !important;
 }
 
-.muted {
-  color: #64748b;
+.btn,
+button {
+  box-shadow: 0 8px 18px rgba(15,23,42,.12) !important;
 }
 
-button, .btn {
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+.btn {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(148,163,184,.75) !important;
 }
 
 .up {
-  background: #15803d;
+  background: linear-gradient(135deg, #16a34a, #22c55e) !important;
+  color: #ffffff !important;
 }
 
 .stop {
-  background: #b91c1c;
+  background: linear-gradient(135deg, #dc2626, #ef4444) !important;
+  color: #ffffff !important;
 }
 
 .down {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb, #3b82f6) !important;
+  color: #ffffff !important;
 }
 
 .warn {
-  background: #b45309;
+  background: linear-gradient(135deg, #d97706, #f59e0b) !important;
+  color: #ffffff !important;
 }
 
-.notice {
-  background: #dcfce7;
-  color: #14532d;
-  border: 1px solid #86efac;
+.ok,
+#toast {
+  background: linear-gradient(135deg, #059669, #10b981) !important;
+  color: #ffffff !important;
 }
 
-input[type=time], input[type=number], .mono {
-  background: #f8fafc;
-  color: #0f172a;
-  border-color: #cbd5e1;
+input[type=time],
+input[type=number] {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.mono {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+/* Marca visual rápida para confirmar que o tema remoto light carregou. */
+body[data-theme='remote'] h1::after {
+  content: '  • tema light';
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
 }
