@@ -1,0 +1,69 @@
+/*
+  Insight Cortina Theme Light
+  Repositório sugerido: insight-aju/insight-cortina-theme
+  Arquivos esperados na raiz do repo:
+  - style.css
+  - background.svg
+
+  Use no firmware:
+  const char* THEME_CSS_URL = "https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/style.css";
+*/
+
+:root {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #172033;
+}
+
+body {
+  background:
+    linear-gradient(180deg, rgba(238,242,247,0.92), rgba(220,227,237,0.96)),
+    url("background.svg") center/cover fixed no-repeat;
+  color: #172033;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+}
+
+h1, h2 {
+  color: #0f172a;
+}
+
+.muted {
+  color: #64748b;
+}
+
+button, .btn {
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+}
+
+.up {
+  background: #15803d;
+}
+
+.stop {
+  background: #b91c1c;
+}
+
+.down {
+  background: #2563eb;
+}
+
+.warn {
+  background: #b45309;
+}
+
+.notice {
+  background: #dcfce7;
+  color: #14532d;
+  border: 1px solid #86efac;
+}
+
+input[type=time], input[type=number], .mono {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
