@@ -1,6 +1,7 @@
-/* Insight Cortina Theme LIGHT - v8.1
+/* Insight Cortina Theme LIGHT - v8.2
    Tema remoto para INSIGHT CORTINA
    Repo: insight-aju/insight-cortina-theme/style.css
+   Entrega principal: GitHub direto a partir do firmware v12.0.2
 */
 
 :root,
@@ -14,7 +15,7 @@ body {
   background-color: #f3f6fb !important;
   background-image:
     linear-gradient(180deg, rgba(255,255,255,.92), rgba(241,245,249,.96)),
-    url('https://cdn.jsdelivr.net/gh/insight-aju/insight-cortina-theme@main/background.svg');
+    url('https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/background.svg?theme=8.2');
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -91,7 +92,7 @@ input[type=number] {
 
 /* Marcador sutil: aparece somente quando este CSS remoto foi carregado. */
 body::after {
-  content: 'REMOTO • v8.1';
+  content: 'REMOTO • v8.2';
   position: fixed;
   right: 10px;
   bottom: 7px;
