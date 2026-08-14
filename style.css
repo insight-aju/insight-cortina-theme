@@ -1,7 +1,7 @@
-/* Insight Cortina Theme LIGHT - v8.2
+/* Insight Cortina Theme LIGHT - v8.3
    Tema remoto para INSIGHT CORTINA
    Repo: insight-aju/insight-cortina-theme/style.css
-   Entrega principal: GitHub direto a partir do firmware v12.0.2
+   A partir do firmware v12.0.2 o CSS e carregado pela API do GitHub e injetado na pagina.
 */
 
 :root,
@@ -15,7 +15,7 @@ body {
   background-color: #f3f6fb !important;
   background-image:
     linear-gradient(180deg, rgba(255,255,255,.92), rgba(241,245,249,.96)),
-    url('https://raw.githubusercontent.com/insight-aju/insight-cortina-theme/main/background.svg?theme=8.2');
+    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZGJlYWZlIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjZjhmYWZjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UwZjJmZSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8cGF0aCBkPSJNNjQgMEgwVjY0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5NGEzYjgiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC4xOCIvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjZykiLz4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjZ3JpZCkiLz4KICA8Y2lyY2xlIGN4PSIxODAiIGN5PSIxMzAiIHI9IjE1MCIgZmlsbD0iI2JmZGJmZSIgb3BhY2l0eT0iMC4zNSIvPgogIDxjaXJjbGUgY3g9Ijk4MCIgY3k9IjY1MCIgcj0iMjIwIiBmaWxsPSIjYmFlNmZkIiBvcGFjaXR5PSIwLjM4Ii8+CiAgPHBhdGggZD0iTTkwIDU2MCBDMjYwIDQ1MCwgNDIwIDY5MCwgNjIwIDU3MCBTOTUwIDQ1MCwgMTExMCA1NzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYwYTVmYSIgc3Ryb2tlLXdpZHRoPSIxMCIgb3BhY2l0eT0iMC4xMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=');
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -90,9 +90,9 @@ input[type=number] {
   border: 1px solid #cbd5e1 !important;
 }
 
-/* Marcador sutil: aparece somente quando este CSS remoto foi carregado. */
+/* Marcador sutil: aparece somente quando este CSS remoto foi aplicado. */
 body::after {
-  content: 'REMOTO • v8.2';
+  content: 'REMOTO • v8.3';
   position: fixed;
   right: 10px;
   bottom: 7px;
