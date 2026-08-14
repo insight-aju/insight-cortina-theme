@@ -1,5 +1,6 @@
-/* Insight Cortina Theme LIGHT - v8
-   Coloque este arquivo na raiz do repo: insight-aju/insight-cortina-theme/style.css
+/* Insight Cortina Theme LIGHT - v8.1
+   Tema remoto para INSIGHT CORTINA
+   Repo: insight-aju/insight-cortina-theme/style.css
 */
 
 :root,
@@ -86,4 +87,25 @@ input[type=number] {
   background: #f8fafc !important;
   color: #0f172a !important;
   border: 1px solid #cbd5e1 !important;
+}
+
+/* Marcador sutil: aparece somente quando este CSS remoto foi carregado. */
+body::after {
+  content: 'REMOTO • v8.1';
+  position: fixed;
+  right: 10px;
+  bottom: 7px;
+  z-index: 9998;
+  padding: 3px 7px;
+  border: 1px solid rgba(100,116,139,.20);
+  border-radius: 999px;
+  background: rgba(255,255,255,.55);
+  color: rgba(71,85,105,.62) !important;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1.2;
+  pointer-events: none;
+  user-select: none;
+  backdrop-filter: blur(4px);
 }
